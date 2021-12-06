@@ -223,6 +223,14 @@ h1, h2, h3 {
         padding: 0 1.6rem;
     }
 
+    &__input:hover, &__button {
+        cursor: pointer;
+    }
+
+    &__button:hover {
+        background: $background-button-hover;
+    }
+
     &__button {
         background: $background-button;
         color: white;
@@ -242,6 +250,11 @@ h1, h2, h3 {
 .fab {
     font-size: 2.3rem;
     margin-right: 1.7rem;
+}
+
+.fab:hover {
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(75%) sepia(27%) saturate(7327%) hue-rotate(149deg) brightness(95%) contrast(108%)
 }
 
 //BUTTONS
@@ -265,14 +278,22 @@ h1, h2, h3 {
     background: $background-button;
     padding: 1.1rem 0;
     width: 20rem;
+    font-weight: 700;
     display: block;
     margin: auto;
     box-shadow: 0px 3px 7px rgba(0, 37, 46, 0.223053);
     border-radius: 20px;
 }
 
+.link-button-primary:hover {
+    border: 1px solid #FF8ED7;
+    box-shadow: 0px 0px 9px rgba(255, 82, 193, 0.218778);
+    color: $Light-Pink;
+}
+
 .link-button:hover {
     cursor: pointer;
+    background:$background-button-hover;
 }
 
 @media screen and (min-width:1440px) {
@@ -311,6 +332,7 @@ h1, h2, h3 {
 
     .hero {
         padding: 0 21.2rem ;
+        margin-bottom: 13.3rem;
 
         &__heading {
             font-size: 4.8rem;
@@ -375,7 +397,8 @@ h1, h2, h3 {
         &__wave-bottom-2 {
             width: 100%;
             height: 139px;
-            background: url(../images/bg-section-bottom-desktop-2.svg) no-repeat;   
+            background: url(../images/bg-section-bottom-desktop-2.svg) no-repeat;  
+            margin-bottom: 12rem; 
         }
 
         &__wrapper {
@@ -387,12 +410,14 @@ h1, h2, h3 {
             flex-direction: row-reverse;
             align-items: center;
             gap: 10rem;
+            padding: 4rem 0 0;
         }
 
         &__wrapper-right {
             display: flex;
             align-items: center;
             gap: 10rem;
+            padding-top: 8rem;
         }
 
         &__wrapper-content {
@@ -414,5 +439,76 @@ h1, h2, h3 {
             font-size: 1.6rem;
             line-height: 2.4rem;
         }
+    }
+
+    .cta {
+
+        margin-bottom: 12rem;
+
+        &__heading {
+            font-size: 4rem;
+            line-height: 6rem;
+            margin-bottom: 4.2rem;
+        }
+    }
+
+    .footer {
+        &__wave-top{
+            height: 158px;
+            background: url(../images/bg-footer-top-desktop.svg) no-repeat;   
+        }
+
+        &__wrapper {
+            padding: 10rem 12rem;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+        &__wrapper-left {
+            width: 34rem;
+        }
+
+        &__wrapper-right {
+            width: 52rem;
+        }
+
+        &__logo {
+            width: 250px;
+        }
+
+        &__contact {
+            margin-top: 2.4rem;
+        }
+
+        &__social-block {
+            margin-top: 8rem;
+        }
+
+        &__heading {
+            font-size: 2.4rem;
+            line-height: 3.6rem;
+        }
+
+        &__input {
+
+            margin-right: 4rem;
+        }
+
+        &__form {
+            margin-top: 4rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__button  {
+            height: 4.8rem;
+            margin: 0;
+        }
+    }
+
+    .fab {
+        font-size: 3.2rem;
+        margin-right: 2.4rem;
     }
 }

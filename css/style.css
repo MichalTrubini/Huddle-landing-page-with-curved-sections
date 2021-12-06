@@ -395,6 +395,14 @@ h1, h2, h3 {
   padding: 0 1.6rem;
 }
 
+.footer__input:hover, .footer__button {
+  cursor: pointer;
+}
+
+.footer__button:hover {
+  background: #ff8fd8;
+}
+
 .footer__button {
   background: #ff52bf;
   color: white;
@@ -412,6 +420,12 @@ h1, h2, h3 {
 .fab {
   font-size: 2.3rem;
   margin-right: 1.7rem;
+}
+
+.fab:hover {
+  cursor: pointer;
+  -webkit-filter: brightness(0) saturate(100%) invert(75%) sepia(27%) saturate(7327%) hue-rotate(149deg) brightness(95%) contrast(108%);
+          filter: brightness(0) saturate(100%) invert(75%) sepia(27%) saturate(7327%) hue-rotate(149deg) brightness(95%) contrast(108%);
 }
 
 .link-button-primary {
@@ -434,6 +448,7 @@ h1, h2, h3 {
   background: #ff52bf;
   padding: 1.1rem 0;
   width: 20rem;
+  font-weight: 700;
   display: block;
   margin: auto;
   -webkit-box-shadow: 0px 3px 7px rgba(0, 37, 46, 0.223053);
@@ -441,8 +456,16 @@ h1, h2, h3 {
   border-radius: 20px;
 }
 
+.link-button-primary:hover {
+  border: 1px solid #FF8ED7;
+  -webkit-box-shadow: 0px 0px 9px rgba(255, 82, 193, 0.218778);
+          box-shadow: 0px 0px 9px rgba(255, 82, 193, 0.218778);
+  color: #ff8fd8;
+}
+
 .link-button:hover {
   cursor: pointer;
+  background: #ff8fd8;
 }
 
 @media screen and (min-width: 1440px) {
@@ -473,6 +496,7 @@ h1, h2, h3 {
   }
   .hero {
     padding: 0 21.2rem;
+    margin-bottom: 13.3rem;
   }
   .hero__heading {
     font-size: 4.8rem;
@@ -529,6 +553,7 @@ h1, h2, h3 {
     width: 100%;
     height: 139px;
     background: url(../images/bg-section-bottom-desktop-2.svg) no-repeat;
+    margin-bottom: 12rem;
   }
   .highlight__wrapper {
     padding: 0 13rem;
@@ -545,6 +570,7 @@ h1, h2, h3 {
         -ms-flex-align: center;
             align-items: center;
     gap: 10rem;
+    padding: 4rem 0 0;
   }
   .highlight__wrapper-right {
     display: -webkit-box;
@@ -554,6 +580,7 @@ h1, h2, h3 {
         -ms-flex-align: center;
             align-items: center;
     gap: 10rem;
+    padding-top: 8rem;
   }
   .highlight__wrapper-content {
     width: 50%;
@@ -570,6 +597,70 @@ h1, h2, h3 {
   .highlight__about {
     font-size: 1.6rem;
     line-height: 2.4rem;
+  }
+  .cta {
+    margin-bottom: 12rem;
+  }
+  .cta__heading {
+    font-size: 4rem;
+    line-height: 6rem;
+    margin-bottom: 4.2rem;
+  }
+  .footer__wave-top {
+    height: 158px;
+    background: url(../images/bg-footer-top-desktop.svg) no-repeat;
+  }
+  .footer__wrapper {
+    padding: 10rem 12rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__wrapper-left {
+    width: 34rem;
+  }
+  .footer__wrapper-right {
+    width: 52rem;
+  }
+  .footer__logo {
+    width: 250px;
+  }
+  .footer__contact {
+    margin-top: 2.4rem;
+  }
+  .footer__social-block {
+    margin-top: 8rem;
+  }
+  .footer__heading {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+  .footer__input {
+    margin-right: 4rem;
+  }
+  .footer__form {
+    margin-top: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__button {
+    height: 4.8rem;
+    margin: 0;
+  }
+  .fab {
+    font-size: 3.2rem;
+    margin-right: 2.4rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
