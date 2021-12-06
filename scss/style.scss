@@ -327,10 +327,12 @@ h1, h2, h3 {
     }
 
     .header {
-        padding: 7.8rem 8rem;
+        padding: 7.8rem 8rem 0;
+        margin-bottom: 22.5rem;
     }
 
     .nav {
+        margin-bottom: 0;
         &__logo {
             width: 240px;
         }

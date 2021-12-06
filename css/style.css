@@ -500,7 +500,11 @@ h1, h2, h3 {
     max-width: 144rem;
   }
   .header {
-    padding: 7.8rem 8rem;
+    padding: 7.8rem 8rem 0;
+    margin-bottom: 22.5rem;
+  }
+  .nav {
+    margin-bottom: 0;
   }
   .nav__logo {
     width: 240px;
