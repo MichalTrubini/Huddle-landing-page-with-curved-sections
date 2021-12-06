@@ -221,6 +221,8 @@ h1, h2, h3 {
         height: 4.8rem;
         border-radius: 0.6rem;
         padding: 0 1.6rem;
+        outline: none;
+        border: none;
     }
 
     &__input:hover, &__button {
@@ -243,7 +245,20 @@ h1, h2, h3 {
         margin-top: 1.6rem;
         margin-left: auto;
         display: block;
+    }
 
+    &__form {
+        position: relative;
+    }
+
+    &__form-error-message {
+        color: #FF4343;
+        font-size: 1.2rem;
+        line-height: 2.4rem;
+        position: absolute;
+        top: 50px;
+        transition: opacity 300ms;
+        opacity: 0;
     }
 }
 
@@ -255,6 +270,15 @@ h1, h2, h3 {
 .fab:hover {
     cursor: pointer;
     filter: brightness(0) saturate(100%) invert(75%) sepia(27%) saturate(7327%) hue-rotate(149deg) brightness(95%) contrast(108%)
+}
+
+.input-error {
+    outline:1px solid #FF4343;
+}
+
+.show-element {
+    transition: opacity 300ms;
+    opacity: 1;
 }
 
 //BUTTONS
